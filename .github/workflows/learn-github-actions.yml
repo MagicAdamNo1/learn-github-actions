@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        uses: actions/hello-world@main
+        uses: ./.github/actions/hello-world
