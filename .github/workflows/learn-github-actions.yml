@@ -8,3 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+  example-job:
+    steps:
+      - name: print hello world
+        run: node hello.js
