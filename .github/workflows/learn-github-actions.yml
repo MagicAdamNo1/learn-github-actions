@@ -12,5 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        # - uses: ./
-        run: node hello.js #-v #node
+        uses: actions/hello-world
