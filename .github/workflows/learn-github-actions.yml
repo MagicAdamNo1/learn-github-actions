@@ -1,16 +1,16 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g bats
-      - run: bats -v
+  # check-bats-version:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v1
+  #     - run: npm install -g bats
+  #     - run: bats -v
   example-job:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
       - uses: ./
-      - run: node hello.js
+      - run: node -v #node hello.js
