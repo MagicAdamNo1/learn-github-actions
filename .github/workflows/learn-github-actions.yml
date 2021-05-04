@@ -9,6 +9,7 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
   example-job:
+    runs-on: ubuntu-latest
     steps:
       - name: print hello world
         run: node hello.js
