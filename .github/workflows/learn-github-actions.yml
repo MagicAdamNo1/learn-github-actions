@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        uses: ./.github/actions/hello-world
+      - uses: actions/checkout@main
+      - uses: ./.github/actions/hello-world
