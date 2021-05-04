@@ -1,6 +1,12 @@
 name: learn-github-actions
 on: [push]
 jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello-world
   # check-bats-version:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -8,9 +14,3 @@ jobs:
   #     - uses: actions/setup-node@v1
   #     - run: npm install -g bats
   #     - run: bats -v
-  example-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print hello world
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/hello-world
