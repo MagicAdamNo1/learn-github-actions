@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: print hello world
         # - uses: ./
-        run: node -v #node hello.js
+        run: node hello.js #-v #node
