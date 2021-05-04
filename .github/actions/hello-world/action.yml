@@ -1,5 +1,5 @@
 name: hello world
 description: print hello world
 runs:
-  using: "node"
+  using: "node12"
   main: "hello.js"
