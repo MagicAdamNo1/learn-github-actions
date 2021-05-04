@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        run: node hello.js
+        run: pwd#node hello.js
