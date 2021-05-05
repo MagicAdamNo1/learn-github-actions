@@ -1,0 +1,7 @@
+name: ls
+description: print working directory
+runs: 
+  using:  "composite"
+  steps:  
+    - run: echo ${{ github.action_path }}
+      shell: bash

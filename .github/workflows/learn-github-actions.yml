@@ -6,10 +6,10 @@ jobs:
     steps:
      # This step checks out a copy of your repository.
       - uses: actions/checkout@v2
-      - run:  ls
-      - run:  node hello.js
+      # - run:  ls
+      # - run:  node hello.js
       # This step references the directory that contains the action.
-      # - uses: ./.github/actions/hello-world
+      - uses: ./.github/actions/basic-action
   # check-bats-version:
   #   runs-on: ubuntu-latest
   #   steps:
