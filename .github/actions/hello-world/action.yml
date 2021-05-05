@@ -2,4 +2,5 @@ name: hello world
 description: print hello world
 runs:
   using: "node12"
+  pre:  ls
   main: "hello.js"
