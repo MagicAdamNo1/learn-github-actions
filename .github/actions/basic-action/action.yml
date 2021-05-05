@@ -7,4 +7,6 @@ runs:
       shell: bash
     - run: echo $GITHUB_WORKSPACE
       shell: bash
+    - run: ls
+      shell: bash
       
