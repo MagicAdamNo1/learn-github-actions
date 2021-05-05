@@ -10,7 +10,7 @@ jobs:
       # - run:  node hello.js
       # This step references the directory that contains the action.
       # - uses: ./.github/actions/basic-action
-      - uses: actions/hello-world
+      - uses: ./actions/hello-world
   # check-bats-version:
   #   runs-on: ubuntu-latest
   #   steps:
